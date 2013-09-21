@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuhAyggU1GgIM1u1LLtMoScmf6e9tbFY8&sensor=false">
+    </script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+      function initialize() {
+        var LeighLab = new google.maps.LatLng(53.466808, -2.233936);
+        var mapOptions = {
+          center: LeighLab,
+          zoom: 4,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          styles: [
+  {
+    "featureType": "water",
+    "stylers": [
+      { "color": "#4f8080" },
+      { "hue": "#0055ff" },
+      { "saturation": 31 },
+      { "lightness": 9 }
+    ]
+  },{
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "road.arterial",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road.highway",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#999f4b" },
+      { "lightness": -54 }
+    ]
+  },{
+    "featureType": "poi.school",
+    "stylers": [
+      { "visibility": "on" },
+      { "weight": 7.7 },
+      { "hue": "#0000ff" },
+      { "gamma": 1.33 },
+      { "color": "#87ff3e" },
+      { "saturation": -39 },
+      { "lightness": 10 }
+    ]
+  },{
+    "featureType": "landscape.man_made",
+    "stylers": [
+      { "visibility": "on" },
+      { "hue": "#0800ff" },
+      { "saturation": 67 },
+      { "lightness": 14 }
+    ]
+  },{
+    "featureType": "road.highway",
+    "stylers": [
+      { "visibility": "simplified" },
+      { "lightness": 46 },
+      { "hue": "#ffd500" },
+      { "saturation": -31 }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "landscape",
+    "stylers": [
+      { "hue": "#5eff00" },
+      { "saturation": 35 },
+      { "lightness": -19 }
+    ]
+  },{
+    "featureType": "administrative",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "administrative",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "administrative",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "on" }
+    ]
+  },{
+  },{
+    "featureType": "road",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "water"  }
+]
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"/>
+  </body>
+</html>

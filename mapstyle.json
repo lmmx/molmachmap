@@ -1,0 +1,103 @@
+[
+  {
+    "featureType": "water",
+    "stylers": [
+      { "color": "#4f8080" },
+      { "hue": "#0055ff" },
+      { "saturation": 31 },
+      { "lightness": 9 }
+    ]
+  },{
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "road.arterial",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road.highway",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#999f4b" },
+      { "lightness": -54 }
+    ]
+  },{
+    "featureType": "poi.school",
+    "stylers": [
+      { "visibility": "on" },
+      { "weight": 7.7 },
+      { "hue": "#0000ff" },
+      { "gamma": 1.33 },
+      { "color": "#87ff3e" },
+      { "saturation": -39 },
+      { "lightness": 10 }
+    ]
+  },{
+    "featureType": "landscape.man_made",
+    "stylers": [
+      { "visibility": "on" },
+      { "hue": "#0800ff" },
+      { "saturation": 67 },
+      { "lightness": 14 }
+    ]
+  },{
+    "featureType": "road.highway",
+    "stylers": [
+      { "visibility": "simplified" },
+      { "lightness": 46 },
+      { "hue": "#ffd500" },
+      { "saturation": -31 }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "landscape",
+    "stylers": [
+      { "hue": "#5eff00" },
+      { "saturation": 35 },
+      { "lightness": -19 }
+    ]
+  },{
+    "featureType": "administrative",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "administrative",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "administrative",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "on" }
+    ]
+  },{
+  },{
+    "featureType": "road",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "water"  }
+]

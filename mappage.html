@@ -16,7 +16,7 @@
 // Create a variable to make the map hover over Manchester upon initialising
         var LeighLab = new google.maps.LatLng(53.466808, -2.233936);
         var mapOptions = {
-          center: LeighLab,
+         center: LeighLab,
           zoom: 4,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
 
@@ -134,6 +134,53 @@ and can be changed there if this isn’t up to scratch */
             mapOptions);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
+
+/* FYI this is how you can add markers as an array of Researcher; Institution; Location :
+
+function getData(resp) {
+    //Functions to get row and column from cell reference
+    var get_row = function(str) { return /[0-9]{1,10}/.exec(str)*1 };
+    var get_col = function(str) { return /[A-Z]{1,2}/.exec(str) };
+ 
+    var data = [];
+    var cols = ["A"];
+    var cells = resp.feed.entry;
+    var column_headers = {};
+    var number_of_cols = 0;
+    var number_of_rows = get_row(cells[cells.length-1].title.$t);
+    var row = 1;
+    var _row = {};
+ 
+    //Get column headers
+    for (i=0; i
+        var _cell_ref = cells[i].title.$t;
+        var _column = get_col(_cell_ref);
+        if (_cell_ref == "A2") {
+            break;
+        }
+        else {
+            column_headers[_column] = cells[i].content.$t;
+            number_of_cols = 0;
+        };
+    };
+ 
+    //Iterate cells and build data object
+    for (i=number_of_cols; i
+        var cell_ref = cells[i].title.$t,
+            col = get_col(cell_ref);
+        if (row < get_row(cell_ref)) {
+            //new row
+            data.push(_row);
+            _row = {};
+            row++;
+        }
+        _row[column_headers[col]] = cells[i].content.$t;
+    }
+    data.push(_row);
+    data.shift();
+    return data;
+}
+*/
     </script>
   </head>
   <body>

@@ -9,7 +9,6 @@ body { height: 100%; margin: 0; padding: 0 }
 </style>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <!--Above is the Google Maps v3 API, with sensor set to false so as not to request user location. In the next line jquery is loaded, required for retrieval of the JSON (which the spreadsheet is exported as, see comment further down!)-->
-<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
       function initialize() {
@@ -160,9 +159,6 @@ var locations = [
       })(marker, i));
       markers.push(marker);
     }
-    var mcOptions = {gridSize: 40, maxZoom: 15};
-    var mc = new MarkerClusterer(map, markers, mcOptions);
-
       }
 
       google.maps.event.addDomListener(window, 'load', initialize);
